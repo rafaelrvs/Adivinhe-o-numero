@@ -1,0 +1,104 @@
+:root {
+    --green: hsl(252, 71%, 42%);
+    --red: hsl(252, 71%, 42%);
+    --background: #2b3a50;
+    --gradient-1: #343e63;
+    --gradient-2: #2a3352;
+  }
+  
+  html {
+    font-size: 12px ;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  
+  body {
+    width: 90vw;
+    margin: 0 auto;
+    background: radial-gradient(var(--gradient1), var(--gradient2));
+    padding: 4rem;
+  }
+  
+  main {
+    color: #fafafa;
+    text-align: center;
+    background: var(--background);
+    border: solid var(--red);
+    border-width: 8px 8px 8px 8px;
+    min-height: 40vh;
+    border-radius: 2rem 2rem 2rem 2rem;
+    padding: 4rem;
+    
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  
+  p {
+    font-size: 1.8rem;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background: var(--green);
+    padding: 2rem 6rem;
+    border-radius: 1rem 1rem 0 0;
+    font-size: 1.4rem;
+    
+  }
+  
+  button:last-child {
+    background: var(--red);
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  /* game screen */
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  input {
+    border: 2px solid hsl(252, 71%, 42%);
+    background-color: #fafafa;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    width: 25rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .stats {
+    text-align: left;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info span {
+    font-size: 1.6rem;
+  }
+
+  #newGameButton {
+    background-color: #2a3352;
+    border-radius: 25px;
+    color: #fafafa;
+  }
+  
+  @media (min-width: 800px) {
+    body {
+      width: 60vw;
+    }
+  }
